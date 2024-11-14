@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../Imagenes/GAMEWORD.png" type="image/x-icon" sizes="17x17">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="../index.html">
+                <img class="nav__logo" src="../Imagenes/GAMEWORD.png" alt="Logo game" title="Game">
+            </a>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a class="fa-solid fa-house Inicio" href="../index.html"></a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="Productos" href="Productos.html">Productos</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="activo Presupuestos" href="Presupuesto.html">Presupuesto</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="Contacto" href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+    <main class="container">
+            <form class="form" action="kathetorresdiaz@gmail.com" method="post">
+                <fieldset class="form__fields">
+                    <h1 class="form__legend">FORMULARIO</h1>
+                    <h2 class="form__header">Si deseas más información completa este formulario:</h2>
+                    <label class=form__label for="name">Nombre:</label>
+                    <input class=form__input type="text" id="name" name="name"></input>
+                    <label class=form__label for="mail">E-mail:</label>
+                    <input class=form__input type="email" id="mail" name="mail"></input>
+                    <label class=form__label for="Telefono">Telefono:</label>
+                    <input class=form__input type="tel" id="Telefono" name="Telefono"></input>
+                    <label class=form__label for="Mensaje">Solicite más información:</label>
+                    <textarea class="form__input form__input-area" id="Mensaje" name="Mensaje"></textarea>
+                    <div>
+                        <a class=form__politica href="#">Politica De Privacidad</a>
+                        <label for="politica">Acepto</label>
+                        <input type="checkbox" id="politica" name="acepto" value="Acepto" checked></input>
+                    </div>
+                    <input class="form__boton" type="submit" name="boton" value="Enviar">
+                </fieldset>
+            </form>
+    </main>
+    <footer class="footer">
+        <article class="footer__media">
+            <a class="fa-brands fa-instagram" href="https://www.instagram.com/" ></a>
+            <a class="fa-brands fa-facebook-f" href="https://es-la.facebook.com/"></a>
+            <a class="fa-brands fa-whatsapp" href="https://web.whatsapp.com/"></a>
+        </article>
+        <p class="footer__company">&copy; GameWord S.A.S. Todos los derechos reservados.</p>
+        <p class="footer__address">Miguel Hernandez 13, Seseña, Toledo.</p>
+    </footer>
+</body>
+</html>
