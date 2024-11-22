@@ -8,6 +8,9 @@
 body{
     margin: 0;
     padding: 0;
+    display:grid;
+    min-height: 100vh;
+    grid-template-rows: 100px 1fr auto;
 }
 a{
     text-decoration: none;
@@ -60,7 +63,6 @@ h1, h2, h3{
 .container{
     background-color: var(--color-primary);
     width: 100%;
-    margin-top: 100px;
 }
 .container__background{
     height: 829px;
@@ -72,11 +74,11 @@ h1, h2, h3{
 .container__grid{
     display: grid;
     row-gap: 15px;
-    grid-template: auto / 33% 33% 33%;
+    grid-template: auto / 25% 25% 25% 25%;
     margin-top: 100px;
     background-color: var(--color-primary);
-    max-width: 1000px;
-    margin: 100px auto 0 auto;
+    max-width: 1300px;
+    margin: 0px auto 0 auto;
 }
 .card{
     display: flex;
@@ -90,8 +92,8 @@ h1, h2, h3{
     background-color: aliceblue;
 }
 .card__img{
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
 }
 .card__content{
     display:flex;
@@ -142,7 +144,7 @@ h1, h2, h3{
 .container__info-gw{
     color: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     border: none;
     font-size: xx-large;
 }

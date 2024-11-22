@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presupuesto</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../Imagenes/GAMEWORD.png" type="image/x-icon" sizes="17x17">
+    <link rel="shortcut icon" href="../imagenes/GAMEWORD.png" type="image/x-icon" sizes="17x17">
 </head>
 <body>
     <header>
         <nav class="nav">
             <a href="../index.html">
-                <img class="nav__logo" src="../Imagenes/GAMEWORD.png" alt="Logo game" title="Game">
+                <img class="nav__logo" src="../imagenes/GAMEWORD.png" alt="Logo game" title="Game">
             </a>
             <ul class="nav__list">
                 <li class="nav__list-item">
@@ -37,17 +37,17 @@
                     <h1 class="form__legend">FORMULARIO</h1>
                     <h2 class="form__header">Si deseas más información completa este formulario:</h2>
                     <label class=form__label for="name">Nombre:</label>
-                    <input class=form__input type="text" id="name" name="name"></input>
+                    <input class=form__input type="text" id="name" name="name" pattern="^[A-Za-z]+([ A-Za-z]+)*$" minlength="3" maxlength="50" required>
                     <label class=form__label for="mail">E-mail:</label>
-                    <input class=form__input type="email" id="mail" name="mail"></input>
+                    <input class=form__input type="email" id="mail" name="mail" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" minlength="3" maxlength="50" required>
                     <label class=form__label for="Telefono">Telefono:</label>
-                    <input class=form__input type="tel" id="Telefono" name="Telefono"></input>
+                    <input class=form__input type="tel" id="Telefono" name="Telefono" pattern="^\d{10}$" required>
                     <label class=form__label for="Mensaje">Solicite más información:</label>
-                    <textarea class="form__input form__input-area" id="Mensaje" name="Mensaje"></textarea>
+                    <textarea class="form__input form__input-area" id="Mensaje" name="Mensaje" maxlength="400"></textarea>
                     <div>
                         <a class=form__politica href="#">Politica De Privacidad</a>
                         <label for="politica">Acepto</label>
-                        <input type="checkbox" id="politica" name="acepto" value="Acepto" checked></input>
+                     <input type="checkbox" id="politica" name="acepto" value="Acepto" checked required>
                     </div>
                     <input class="form__boton" type="submit" name="boton" value="Enviar">
                 </fieldset>
